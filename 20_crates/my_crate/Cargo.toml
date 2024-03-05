@@ -1,0 +1,16 @@
+[package]
+name = "my_crate_example_RaulSalinas"
+version = "0.1.0"
+authors =["Raul Salinas"]
+edition = "2021"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[profile.dev]
+opt-level = 1 
+# level of optimization (0 none, 3 max)
+# faster runtime vs faster compile time
+
+[profile.release]
+opt-level = 3
